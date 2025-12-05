@@ -1,5 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { Target, Eye, Heart, Users, Award, Rocket, Linkedin } from 'lucide-react';
+import { Dialog, DialogTrigger, DialogContent } from '@/components/ui/dialog';
 
 // Team member images
 import santiagoImg from '@/assets/team/santiago-billinghurst.jpg';
@@ -177,6 +178,59 @@ const Nosotros = () => {
                 transforman plataformas y resultados.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Preview */}
+      <section className="py-20 bg-card/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-8">
+            <span className="text-primary font-medium text-sm uppercase tracking-wider">
+              Presentación
+            </span>
+
+            <p className="text-muted-foreground mt-3">
+              Preview rápido de quiénes somos y qué hacemos.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="relative w-full max-w-3xl rounded-2xl overflow-hidden shadow-lg focus:outline-none">
+                  <img
+                    src="https://img.youtube.com/vi/aYmH68nudv0/hqdefault.jpg"
+                    alt="Presentación - Media Core Consulting"
+                    className="w-full h-auto block"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 rounded-full bg-white/95 flex items-center justify-center shadow-lg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-10 h-10 text-primary">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </DialogTrigger>
+
+              <DialogContent className="max-w-4xl w-[95%] p-0">
+                <div className="relative" style={{ paddingTop: '56.25%' }}>
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/aYmH68nudv0?autoplay=1"
+                    title="Presentación Media Core Consulting"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
