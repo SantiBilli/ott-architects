@@ -35,7 +35,7 @@ const teamMembers = [
   {
     name: 'Juana Estarli',
     role: 'Consultora en Backend Audiovisual y Optimización',
-    image: juanaImg,
+    image: sofiaImg,
     description:
       'Responsable del funcionamiento técnico del sistema OTT desde el servidor. Permite que el sistema funcione rápido y sin interrupciones.',
     tasks: [
@@ -47,7 +47,7 @@ const teamMembers = [
   {
     name: 'Sofía Massari',
     role: 'Consultora en Estrategia, Monetización y Gestión',
-    image: sofiaImg,
+    image: juanaImg,
     description:
       'Responsable de la estrategia comercial y monetización OTT. Asegura que el proyecto sea rentable y estratégicamente orientado.',
     tasks: [
